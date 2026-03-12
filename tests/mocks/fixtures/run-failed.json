@@ -1,0 +1,21 @@
+{
+  "data": {
+    "id": "run_failed789",
+    "actId": "apify~website-content-crawler",
+    "userId": "user_test123",
+    "startedAt": "2025-01-15T10:00:00.000Z",
+    "finishedAt": "2025-01-15T10:00:45.000Z",
+    "status": "FAILED",
+    "defaultDatasetId": "dataset_fail123",
+    "defaultKeyValueStoreId": "kvs_test123",
+    "defaultRequestQueueId": "rq_test123",
+    "buildId": "build_test123",
+    "exitCode": 1,
+    "stats": {
+      "durationMillis": 45000,
+      "runTimeSecs": 45
+    },
+    "usage": {},
+    "usageTotalUsd": 0.002
+  }
+}

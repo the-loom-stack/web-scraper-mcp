@@ -1,0 +1,8 @@
+{
+  "title": "LoomStack Web Scraper MCP",
+  "type": "object",
+  "schemaVersion": 1,
+  "description": "This Actor runs as a persistent MCP server (Standby mode). No input is needed — it starts automatically and waits for MCP client connections at the /mcp endpoint. Configure options via Environment Variables in Actor Settings.",
+  "properties": {},
+  "required": []
+}

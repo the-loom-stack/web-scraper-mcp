@@ -1,0 +1,20 @@
+node_modules/
+tests/
+coverage/
+.env
+.env.*
+.git/
+.gitignore
+
+# Strategy docs — not needed in the container
+BUSINESS_MODEL.md
+ROADMAP.md
+FEATURE_GAPS.md
+MCP_ANALYSIS.md
+APIFY_COMPETITIVE_ANALYSIS.md
+APIFY_MARKETPLACE_STRATEGY.md
+
+# Dev config
+vitest.config.*
+nodemon.json
+*.log

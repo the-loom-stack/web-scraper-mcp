@@ -1,0 +1,14 @@
+{
+  "actorSpecification": 1,
+  "name": "web-scraper-mcp",
+  "title": "Web Scraper MCP Server",
+  "description": "Batch scrape any website via Model Context Protocol. Works with Claude Desktop, Cursor, Cline, and all MCP-compatible AI clients. Smart retries, JS rendering, clean Markdown output, and async crawling for large batches.",
+  "version": "1.0",
+  "buildTag": "latest",
+  "dockerfile": "../Dockerfile",
+  "readme": "../README.md",
+  "categories": ["MCP_SERVERS", "AI", "DEVELOPER_TOOLS", "WEB_SCRAPING"],
+  "minMemoryMbytes": 256,
+  "maxMemoryMbytes": 1024,
+  "storages": {}
+}

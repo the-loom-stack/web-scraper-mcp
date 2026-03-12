@@ -1,0 +1,21 @@
+{
+  "data": {
+    "id": "run_abc123def456",
+    "actId": "apify~website-content-crawler",
+    "userId": "user_test123",
+    "startedAt": "2025-01-15T10:00:00.000Z",
+    "finishedAt": "2025-01-15T10:01:30.000Z",
+    "status": "SUCCEEDED",
+    "defaultDatasetId": "dataset_xyz789",
+    "defaultKeyValueStoreId": "kvs_test123",
+    "defaultRequestQueueId": "rq_test123",
+    "buildId": "build_test123",
+    "exitCode": 0,
+    "stats": {
+      "durationMillis": 90000,
+      "runTimeSecs": 90
+    },
+    "usage": {},
+    "usageTotalUsd": 0.0045
+  }
+}

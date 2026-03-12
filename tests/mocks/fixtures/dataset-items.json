@@ -1,0 +1,35 @@
+[
+  {
+    "url": "https://example.com",
+    "metadata": {
+      "title": "Example Domain",
+      "description": "This domain is for use in illustrative examples.",
+      "languageCode": "en"
+    },
+    "markdown": "# Example Domain\n\nThis domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission.\n\n[More information...](https://www.iana.org/domains/example)",
+    "text": "Example Domain. This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission. More information...",
+    "html": "<h1>Example Domain</h1><p>This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission.</p><p><a href=\"https://www.iana.org/domains/example\">More information...</a></p>"
+  },
+  {
+    "url": "https://example.com/about",
+    "metadata": {
+      "title": "About - Example Domain",
+      "description": "About page for example domain.",
+      "languageCode": "en"
+    },
+    "markdown": "# About\n\nThis is the about page of example.com.\n\n## History\n\nExample.com has been reserved for illustrative purposes since the early days of the internet.",
+    "text": "About. This is the about page of example.com. History. Example.com has been reserved for illustrative purposes since the early days of the internet.",
+    "html": "<h1>About</h1><p>This is the about page of example.com.</p><h2>History</h2><p>Example.com has been reserved for illustrative purposes since the early days of the internet.</p>"
+  },
+  {
+    "url": "https://example.com/contact",
+    "metadata": {
+      "title": "Contact - Example Domain",
+      "description": "Contact information.",
+      "languageCode": "en"
+    },
+    "markdown": "# Contact\n\nFor more information, visit [IANA](https://www.iana.org).",
+    "text": "Contact. For more information, visit IANA.",
+    "html": "<h1>Contact</h1><p>For more information, visit <a href=\"https://www.iana.org\">IANA</a>.</p>"
+  }
+]
