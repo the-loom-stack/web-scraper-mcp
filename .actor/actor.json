@@ -11,63 +11,6 @@
   "minMemoryMbytes": 256,
   "maxMemoryMbytes": 1024,
   "storages": {
-    "dataset": {
-      "actorSpecification": 1,
-      "fields": [
-        {
-          "name": "url",
-          "label": "URL",
-          "description": "The URL that was scraped",
-          "type": "string",
-          "example": "https://example.com"
-        },
-        {
-          "name": "title",
-          "label": "Page Title",
-          "description": "The HTML title of the scraped page",
-          "type": "string",
-          "example": "Example Domain"
-        },
-        {
-          "name": "content",
-          "label": "Content",
-          "description": "Extracted page content in Markdown format, optimised for AI consumption",
-          "type": "string",
-          "example": "# Example Domain\n\nThis domain is for use in illustrative examples..."
-        },
-        {
-          "name": "status",
-          "label": "Status",
-          "description": "Result status: success or error",
-          "type": "string",
-          "example": "success"
-        },
-        {
-          "name": "error",
-          "label": "Error",
-          "description": "Error message if status is error, otherwise absent",
-          "type": "string",
-          "example": "Failed to fetch page after 3 retries"
-        }
-      ],
-      "views": {
-        "overview": {
-          "title": "Scraped Pages",
-          "transformation": {
-            "fields": ["url", "title", "content", "status", "error"]
-          },
-          "display": {
-            "component": "table",
-            "properties": {
-              "url": { "label": "URL", "format": "link" },
-              "title": { "label": "Page Title" },
-              "content": { "label": "Content" },
-              "status": { "label": "Status" },
-              "error": { "label": "Error" }
-            }
-          }
-        }
-      }
-    }
+    "dataset": "./output_schema.json"
   }
 }
