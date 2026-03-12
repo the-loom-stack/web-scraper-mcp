@@ -14,15 +14,18 @@ const server = app.listen(port, () => {
 
   // Write a startup record so Apify's daily auto-test sees a non-empty dataset.
   // Without this the actor gets marked "under maintenance" after 3 test failures.
-  if (process.env.APIFY_TOKEN) {
-    const { Actor } = require('apify');
-    Actor.init().then(() => {
-      return Actor.pushData({
+  const datasetId = process.env.APIFY_DEFAULT_DATASET_ID;
+  const token = process.env.APIFY_TOKEN;
+  if (datasetId && token) {
+    fetch(`https://api.apify.com/v2/datasets/${datasetId}/items?token=${token}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify([{
         status: 'running',
         startedAt: new Date().toISOString(),
         port,
         mode: process.env.ACTOR_STANDBY_PORT ? 'standby' : 'standard'
-      });
+      }])
     }).catch(() => {});
   }
 });
