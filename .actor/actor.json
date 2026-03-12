@@ -10,7 +10,9 @@
   "categories": ["MCP_SERVERS", "AI", "DEVELOPER_TOOLS", "WEB_SCRAPING"],
   "minMemoryMbytes": 256,
   "maxMemoryMbytes": 1024,
+  "output": "./output_schema.json",
+  "webServerSchema": "./web_server_schema.json",
   "storages": {
-    "dataset": "./output_schema.json"
+    "dataset": "./dataset_schema.json"
   }
 }

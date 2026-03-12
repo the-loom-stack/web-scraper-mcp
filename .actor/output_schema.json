@@ -1,49 +1,14 @@
 {
-  "actorSpecification": 1,
-  "fields": {
-    "type": "object",
-    "properties": {
-      "url": {
-        "type": "string",
-        "description": "The URL that was scraped",
-        "example": "https://example.com"
-      },
-      "title": {
-        "type": "string",
-        "description": "The HTML title of the scraped page",
-        "example": "Example Domain"
-      },
-      "content": {
-        "type": "string",
-        "description": "Extracted page content in Markdown format, optimised for AI consumption"
-      },
-      "status": {
-        "type": "string",
-        "description": "Result status: success or error",
-        "example": "success"
-      },
-      "error": {
-        "type": "string",
-        "description": "Error message if status is error, otherwise absent"
-      }
-    }
-  },
-  "views": {
-    "overview": {
-      "title": "Scraped Pages",
-      "transformation": {
-        "fields": ["url", "title", "content", "status", "error"]
-      },
-      "display": {
-        "component": "table",
-        "properties": {
-          "url": { "label": "URL", "format": "link" },
-          "title": { "label": "Page Title" },
-          "content": { "label": "Content" },
-          "status": { "label": "Status" },
-          "error": { "label": "Error" }
-        }
-      }
+  "$schema": "https://apify.com/schemas/v1/output.ide.json",
+  "actorOutputSchemaVersion": 1,
+  "title": "MCP Server Output",
+  "description": "This Actor runs as a persistent MCP server in Standby mode. It exposes a live MCP endpoint rather than storing results in a dataset.",
+  "properties": {
+    "mcpEndpoint": {
+      "type": "string",
+      "title": "MCP Endpoint",
+      "description": "The live MCP server URL. Connect Claude Desktop, Cursor, Cline, or any MCP client to this endpoint.",
+      "template": "{{run.containerUrl}}mcp"
     }
   }
 }
